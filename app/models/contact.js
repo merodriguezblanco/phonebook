@@ -6,7 +6,10 @@ let Contact = DS.Model.extend({
   email: DS.attr('string'),
   phone: DS.attr('string'),
   address: DS.attr('string'),
-  photo: DS.attr('string')
+  photo: DS.attr('string'),
+  fullName: Ember.computed('firstName', 'lastName', function () {
+    return `${this.get('firstName')} ${this.get('lastName')}`;
+  })
 });
 
 Contact.reopenClass({
