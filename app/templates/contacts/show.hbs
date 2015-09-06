@@ -3,3 +3,8 @@
 <p>{{model.email}}</p>
 <p>{{model.address}}</p>
 <p>{{model.phone}}</p>
+
+<footer>
+  {{link-to 'Back' 'contacts' class='btn btn-danger'}}
+  {{link-to 'Edit' 'contacts.edit' model class='btn btn-primary'}}
+</footer>

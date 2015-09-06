@@ -1,0 +1,39 @@
+<form class="form-horizontal">
+  <img src="{{model.photo}}" alt="{{model.fullName}}">
+  <div class="form-group">
+    <label for="first-name" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+      {{input value=model.firstName placeholder='First Name' id='first-name' class='form-control'}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="last-name" class="col-sm-2 control-label">Last Name</label>
+    <div class="col-sm-10">
+      {{input value=model.lastName placeholder='Last Name' id='last-name' class='form-control'}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      {{input value=model.email placeholder='Email' id='email' type='email' class='form-control'}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="address" class="col-sm-2 control-label">Address</label>
+    <div class="col-sm-10">
+      {{input value=model.address placeholder='Address' id='address' class='form-control'}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="phone" class="col-sm-2 control-label">Phone</label>
+    <div class="col-sm-10">
+      {{input value=model.phone placeholder='Phone' id='phone' type='tel' class='form-control'}}
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button class='btn btn-danger' {{action 'cancel'}}>Cancel</button>
+      <button class='btn btn-primary' {{action 'save'}}>Save</button>
+    </div>
+  </div>
+</form>

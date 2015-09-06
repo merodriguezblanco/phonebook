@@ -10,6 +10,9 @@ Router.map(function() {
     this.route('show', {
       path: ':contact_id'
     });
+    this.route('edit', {
+      path: ':contact_id/edit'
+    });
   });
 });
 
