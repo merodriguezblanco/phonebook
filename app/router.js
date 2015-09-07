@@ -13,6 +13,7 @@ Router.map(function() {
     this.route('edit', {
       path: ':contact_id/edit'
     });
+    this.route('new');
   });
 });
 
