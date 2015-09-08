@@ -1,5 +1,11 @@
+<form role="search">
+  <div class="form-group">
+    {{input value=filterText placeholder='Search...' class='form-control' type='text'}}
+  </div>
+</form>
+
 <div class="row">
-  {{#each model as |contact|}}
+  {{#each filteredContacts as |contact|}}
     {{contacts/contact-row contact=contact}}
   {{/each}}
 </div>
